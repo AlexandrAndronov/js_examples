@@ -1,0 +1,41 @@
+body {
+  font-family: 'Helvetica';
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+
+
+li {
+  list-style: none;
+}
+
+
+a {
+  text-decoration: none;
+  color: #525476;
+}
+ul.ul_block>li:nth-child(8)~li {
+  width: 50%;
+  height: 20px;
+  background-color: #525476;
+}
+
+
+.ul_block_a {
+  margin: 50px 0 0 50px;
+}
+
+
+a:only-child:link, a[href^="https"]:link {
+  color: #555;
+}
+a:only-child:visited, a[href^="https"]:visited {
+  color: maroon;
+}
+a:hover {
+  font-size: 28px;
+}

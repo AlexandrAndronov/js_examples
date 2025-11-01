@@ -263,7 +263,15 @@
 // }
 
 
+// Пример 23
+// function showMovie(age) {
+//   if ( !checkAge(age) ) {
+//     return;
+//   }
 
+//   alert( "Вам показывается кино" ); // (*)
+//   // ...
+// }
 
 
 

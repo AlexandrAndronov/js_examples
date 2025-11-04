@@ -278,6 +278,263 @@
 
 
 
+// function showPrimes(n) {
+//   nextPrime: for (let i = 2; i < n; i++) {
+
+//     for (let j = 2; j < i; j++) {
+//       if (i % j == 0) continue nextPrime;
+//     }
+
+//     alert( i ); // простое
+//   }
+// }
+// Второй вариант использует дополнительную функцию isPrime(n) для проверки на простое:
+
+// function showPrimes(n) {
+
+//   for (let i = 2; i < n; i++) {
+//     if (!isPrime(i)) continue;
+
+//     alert(i);  // простое
+//   }
+// }
+
+// function isPrime(n) {
+//   for (let i = 2; i < n; i++) {
+//     if ( n % i == 0) return false;
+//   }
+//   return true;
+// }
+
+
+
+
+
+
+
+
+
+// Перепишите функцию, используя оператор '?' или '||'
+// важность: 4
+// Следующая функция возвращает true, если параметр age больше 18.
+
+// В ином случае она задаёт вопрос confirm и возвращает его результат.
+
+// function checkAge(age) {
+//   if (age > 18) {
+//     return true;
+//   } else {
+//     return confirm('Родители разрешили?');
+//   }
+// }
+// Перепишите функцию, чтобы она делала то же самое, но без if, в одну строку.
+
+// Сделайте два варианта функции checkAge:
+
+// Используя оператор ?
+// Используя оператор ||
+
+
+// let age = prompt('How older you?');
+// function checkAge(age) {
+// 	return (age > 18) ? alert('Добро пожаловать!') : confirm('Родители-то разрешили?');
+// }
+
+// checkAge(age);
+
+
+// let age = prompt('How older you?');
+
+// function checkAge(age) {
+// 	return (age > 18) || confirm('Родители разрешили?');
+// }
+
+
+
+
+
+
+
+// Написать функцию, которая возвращает меньшее из двух чисел
+
+// let min_a = +prompt('Введите число №1', ' ');
+// let min_b = +prompt('Введите число №2', ' ');
+
+// function minNumber(num_a, num_b) {
+// 	return (num_a < num_b) ? `Число ${num_a} > числа ${min_b}` : num_b;
+// }
+
+// alert(minNumber(min_a, min_b));
+
+
+// let num_exp_1 = +prompt('Введите число, которое будет возведено в степень', '4');
+// let num_exp_2 = +prompt('Введите степень', '2');
+
+// function exponentiation(num_exp_1, num_exp_2) {
+// 	return `Число ${num_exp_1}, возведенное в степень ${num_exp_2} = ${num_exp_1 ** num_exp_2}`;
+// }
+
+// alert(exponentiation(num_exp_1, num_exp_2));
+
+
+
+// let num_exp_1 = +prompt('Введите число, которое будет возведено в степень', '4');
+// let num_exp_2 = +prompt('Введите степень', '2');
+
+// function exponentiation(num_exp_1, num_exp_2) {
+// 	if (Number(num_exp_1) && Number(num_exp_2)) {
+// 		return `Число ${num_exp_1}, возведенное в степень ${num_exp_2} = ${num_exp_1 ** num_exp_2}`;
+// 	} else {
+// 		alert('Нужны числа, а не буквы!');
+// 	}
+// }
+
+// 	if (exponentiation(num_exp_1, num_exp_2)) {
+// 		alert(exponentiation(num_exp_1, num_exp_2));	
+// 	} 
+
+
+
+// function pow(x, n) {
+//   let result = x;
+
+//   for (let i = 1; i < n; i++) {
+//     result *= x;
+//   }
+
+//   return result;
+// }
+
+// let x = prompt("x?", '');
+// let n = prompt("n?", '');
+
+// if (n >= 1 && n % 1 == 0) {
+//   alert( pow(x, n) );
+// } else {
+//   alert(`Степень ${n} не поддерживается, используйте натуральное число`);
+// }
+
+
+
+
+
+// function sayHi() {
+// 	alert('Hi');
+// }
+
+// let function_link = sayHi;
+
+// sayHi();
+// function_link();
+
+
+
+
+// Пример 25
+// function ask(question, yes, no) {
+// 	if (confirm(question)) {
+// 		yes();
+// 	} else {
+// 		no();
+// 	}
+// }
+
+// function showOk() {
+// 	alert('Вы дали согласие!');
+// }
+
+// function showCancel() {
+// 	alert('Вы не согласны!');
+// }
+
+// ask('Вы согласны?', showOk, showCancel);
+
+
+
+
+
+// Пример 25_1
+// function ask(question, yes, no) {
+// 	if (confirm(question)) {
+// 		yes();
+// 	} else {
+// 		no();
+// 	}
+// }
+
+// ask('Вы даете свое согласие?',
+// 	function() { alert('Вы дали свое согласие!'); },
+// 	function() { alert('Вы не дали свое согласие!'); }
+// 	);
+
+
+
+
+// BigInt
+// let n = (20 ** 20);
+
+// alert(typeof n);
+// alert (n);
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

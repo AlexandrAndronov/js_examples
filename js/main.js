@@ -492,6 +492,56 @@
 
 
 
+// Перевод числа в двоичную систему через for
+// function toBinary(n) {
+//     if (n === 0) return "0";
+//     let binaryArray = [];
+
+//     for (; n > 0; n = Math.floor(n / 2)) {
+//         binaryArray.unshift(n % 2); // вставляем остаток в начало массива
+//     }
+
+//     return binaryArray.join(""); // собираем строку из массива
+// }
+
+// // Пример с prompt
+// let input = prompt("Введите число для перевода в двоичную систему:");
+// let num = parseInt(input);
+
+// if (isNaN(num) || num < 0) {
+//     alert("Пожалуйста, введите корректное неотрицательное число.");
+// } else {
+//     alert(`Число ${num} в двоичной системе: ${toBinary(num)}`);
+// }
+
+
+
+
+
+// Перевод числа в двоичную систему через while
+function toBinary(n) {
+    if (n === 0) return "0";
+    let binary = "";
+    while (n > 0) {
+        let remainder = n % 2;
+        binary = remainder + binary;
+        n = Math.floor(n / 2);
+    }
+    return binary;
+}
+
+// Запрос числа у пользователя
+let input = prompt("Введите число для перевода в двоичную систему:");
+
+// Преобразуем введённое значение в число
+let num = parseInt(input);
+
+if (isNaN(num) || num < 0) {
+    alert("Пожалуйста, введите корректное неотрицательное число.");
+} else {
+    let binary = toBinary(num);
+    alert(`Число ${num} в двоичной системе: ${binary}`);
+}
 
 
 
@@ -502,17 +552,6 @@
 
 
 
-
-
-
-
-
-
-
-
-
-
-console.log(y)
 
 
 
